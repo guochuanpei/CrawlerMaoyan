@@ -20,6 +20,7 @@ def get_one_page(url):
         return None
 
 
+# parse html
 def parse_one_page(html):
     pattern = re.compile(
         '<dd>.*?board-index.*?>(\d+)</i>.*?data-src="(.*?)".*?name"><a'
